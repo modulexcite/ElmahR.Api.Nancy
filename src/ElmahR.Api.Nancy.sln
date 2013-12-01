@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C90C4DA7-B8EC-40F0-939E-E36585D71DF9}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.Api.Nancy", "ElmahR.Api.Nancy\ElmahR.Api.Nancy.csproj", "{759562B7-6550-47E7-87B9-FF92206656A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.Api.Messages", "ElmahR.Api.Messages\ElmahR.Api.Messages.csproj", "{F24439A8-094E-45AD-8E4B-840E1F226B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.ConsoleSource", "ElmahR.ConsoleSource\ElmahR.ConsoleSource.csproj", "{0A414B50-264B-4CE4-B03B-F69464B964B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.WindowsServiceSource", "ElmahR.WindowsServiceSource\ElmahR.WindowsServiceSource.csproj", "{637CC453-6C6C-438B-8491-2326B40D95D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.Api.Dashboard", "ElmahR.Api.Dashboard\ElmahR.Api.Dashboard.csproj", "{9027EF46-76AB-4F0F-A3C0-7E313CB40206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElmahR.Api.Client", "ElmahR.Api.Client\ElmahR.Api.Client.csproj", "{7FF2AB5E-B4AA-4FBD-A869-C58CF783813C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{759562B7-6550-47E7-87B9-FF92206656A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759562B7-6550-47E7-87B9-FF92206656A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759562B7-6550-47E7-87B9-FF92206656A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759562B7-6550-47E7-87B9-FF92206656A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F24439A8-094E-45AD-8E4B-840E1F226B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24439A8-094E-45AD-8E4B-840E1F226B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24439A8-094E-45AD-8E4B-840E1F226B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24439A8-094E-45AD-8E4B-840E1F226B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A414B50-264B-4CE4-B03B-F69464B964B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A414B50-264B-4CE4-B03B-F69464B964B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A414B50-264B-4CE4-B03B-F69464B964B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A414B50-264B-4CE4-B03B-F69464B964B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637CC453-6C6C-438B-8491-2326B40D95D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637CC453-6C6C-438B-8491-2326B40D95D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637CC453-6C6C-438B-8491-2326B40D95D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637CC453-6C6C-438B-8491-2326B40D95D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9027EF46-76AB-4F0F-A3C0-7E313CB40206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9027EF46-76AB-4F0F-A3C0-7E313CB40206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9027EF46-76AB-4F0F-A3C0-7E313CB40206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9027EF46-76AB-4F0F-A3C0-7E313CB40206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF2AB5E-B4AA-4FBD-A869-C58CF783813C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF2AB5E-B4AA-4FBD-A869-C58CF783813C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF2AB5E-B4AA-4FBD-A869-C58CF783813C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF2AB5E-B4AA-4FBD-A869-C58CF783813C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
