@@ -3,5 +3,6 @@
 namespace ElmahR.Api.Client {
     public interface IElmahRApiClient {
         ErrorSubmitResponse Send(ErrorListSubmitRequest errorListSubmitRequest);
+        ErrorSubmitResponse Send(ErrorSubmitRequest errorSubmitRequest);
     }
 }

@@ -130,13 +130,7 @@ namespace ElmahR.Api.Nancy {
         private static Action<Exception> ErrorCatcher(string infoUrlPath) {
             return ex => {
                 Hub.Log(string.Format("An error occurred in ElmahR: {0}", ex), Hub.Severity.Critical);
-
-                Error.ProcessError(
-                    Error.ElmahRSourceId,
-                    ex,
-                    infoUrlPath,
-                    _ => { },
-                    true);
+                Error.ProcessError(Error.ElmahRSourceId, ex, infoUrlPath, _ => { }, true);
             };
         }
 
