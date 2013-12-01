@@ -13,8 +13,8 @@ using Newtonsoft.Json;
 using Hub = ElmahR.Core.Hub;
 
 namespace ElmahR.Api.Nancy {
-    public class ErrorSubmitionService : NancyModule {
-        public ErrorSubmitionService()
+    public class ErrorSubmitionModule : NancyModule {
+        public ErrorSubmitionModule()
             : base("nancyapi") {
 
             Get["/"] = _ => "Hello World!";

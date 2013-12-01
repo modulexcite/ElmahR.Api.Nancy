@@ -16,7 +16,7 @@ namespace ElmahR.WindowsServiceSource {
             ErrorListSubmitRequest errorListSubmitRequest = SampleRequestFixture.CreateErrorListSubmitRequest("Win Service Source","Start Action");
 
             IElmahRApiClient apiClient = new ElmahRNancyClient("http://dashboard.elmahrnancyapi.com/");
-            ErrorSubmitResponse response = apiClient.Send(errorListSubmitRequest);
+            ErrorSubmitResponse response = apiClient.Post(errorListSubmitRequest);
 
             Console.WriteLine("Status : {0}, Desc : {1}", response.SubmitionStatus, response.SubmitionStatusDescription);
         }
@@ -25,7 +25,7 @@ namespace ElmahR.WindowsServiceSource {
             ErrorListSubmitRequest errorListSubmitRequest = SampleRequestFixture.CreateErrorListSubmitRequest("Win Service Source", "Stop Action");
 
             IElmahRApiClient apiClient = new ElmahRNancyClient("http://dashboard.elmahrnancyapi.com/");
-            ErrorSubmitResponse response = apiClient.Send(errorListSubmitRequest);
+            ErrorSubmitResponse response = apiClient.Post(errorListSubmitRequest);
 
             Console.WriteLine("Status : {0}, Desc : {1}", response.SubmitionStatus, response.SubmitionStatusDescription);
         }

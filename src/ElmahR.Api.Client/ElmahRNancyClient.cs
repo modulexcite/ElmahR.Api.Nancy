@@ -12,14 +12,14 @@ namespace ElmahR.Api.Client {
             _baseUrl = baseUrl;
         }
 
-        public ErrorSubmitResponse Send(ErrorListSubmitRequest errorListSubmitRequest) {
+        public ErrorSubmitResponse Post(ErrorListSubmitRequest errorListSubmitRequest) {
             RestRequest request;
             var client = PrepareRestClientWithRequestBody(errorListSubmitRequest, NANCYAPI_SUBMITERRORS, out request);
             IRestResponse<ErrorSubmitResponse> response = client.Post<ErrorSubmitResponse>(request);
             return response.Data;
         }
         
-        public ErrorSubmitResponse Send(ErrorSubmitRequest errorSubmitRequest) {
+        public ErrorSubmitResponse Post(ErrorSubmitRequest errorSubmitRequest) {
             RestRequest request;
             var client = PrepareRestClientWithRequestBody(errorSubmitRequest, NANCYAPI_SUBMITERROR, out request);
             IRestResponse<ErrorSubmitResponse> response = client.Post<ErrorSubmitResponse>(request);
