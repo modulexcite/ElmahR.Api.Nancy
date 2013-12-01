@@ -43,27 +43,27 @@ namespace ElmahR.Api.Nancy {
         private static ErrorSubmitResponse PostErrors(ErrorListSubmitRequest request) {
             if (request.Errors.Any(error => !AddError(error))) {
                 return new ErrorSubmitResponse {
-                    SubmitionStatus = 2,
-                    SubmitionStatusDescription = "FAILED"
+                    Status = 2,
+                    StatusMessage = "FAILED"
                 };
             }
             return new ErrorSubmitResponse {
-                SubmitionStatus = 1,
-                SubmitionStatusDescription = "OK"
+                Status = 1,
+                StatusMessage = "OK"
             };
         }
 
         private static ErrorSubmitResponse PostError(ErrorSubmitRequest request) {
             if (AddError(request)) {
                 return new ErrorSubmitResponse {
-                    SubmitionStatus = 1,
-                    SubmitionStatusDescription = "OK"
+                    Status = 1,
+                    StatusMessage = "OK"
                 };
             }
 
             return new ErrorSubmitResponse {
-                SubmitionStatus = 2,
-                SubmitionStatusDescription = "FAILED"
+                Status = 2,
+                StatusMessage = "FAILED"
             };
         }
 

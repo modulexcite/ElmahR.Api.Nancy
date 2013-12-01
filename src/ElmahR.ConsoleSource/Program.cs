@@ -11,7 +11,7 @@ namespace ElmahR.ConsoleSource {
             IElmahRApiClient apiClient = new ElmahRNancyClient("http://dashboard.elmahrnancyapi.com/");
             ErrorSubmitResponse response = apiClient.Post(errorListSubmitRequest);
 
-            Console.WriteLine("Status : {0}, Desc : {1}", response.SubmitionStatus, response.SubmitionStatusDescription);
+            Console.WriteLine("Status : {0}, Message : {1}", response.Status, response.StatusMessage);
 
             Console.ReadKey();
         }

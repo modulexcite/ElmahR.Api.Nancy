@@ -1,6 +1,6 @@
 ﻿namespace ElmahR.Api.Messages {
     public class ErrorSubmitResponse {
-        public int SubmitionStatus { get; set; }
-        public string SubmitionStatusDescription { get; set; }
+        public int Status { get; set; }
+        public string StatusMessage { get; set; }
     }
 }

@@ -13,21 +13,18 @@ namespace ElmahR.WindowsServiceSource {
             /*TODO Convert errors to ErrorDto*/
         }
         public void Start() {
-            ErrorListSubmitRequest errorListSubmitRequest = SampleRequestFixture.CreateErrorListSubmitRequest("Win Service Source","Start Action");
-
-            IElmahRApiClient apiClient = new ElmahRNancyClient("http://dashboard.elmahrnancyapi.com/");
-            ErrorSubmitResponse response = apiClient.Post(errorListSubmitRequest);
-
-            Console.WriteLine("Status : {0}, Desc : {1}", response.SubmitionStatus, response.SubmitionStatusDescription);
+            PostSampleError("Windows Service Started");
         }
 
         public void Stop() {
-            ErrorListSubmitRequest errorListSubmitRequest = SampleRequestFixture.CreateErrorListSubmitRequest("Win Service Source", "Stop Action");
+            PostSampleError("Windows Service Stopped");
+        }
+
+        private static void PostSampleError(string detail) {
+            ErrorListSubmitRequest errorListSubmitRequest = SampleRequestFixture.CreateErrorListSubmitRequest("Win Service Source", detail);
 
             IElmahRApiClient apiClient = new ElmahRNancyClient("http://dashboard.elmahrnancyapi.com/");
-            ErrorSubmitResponse response = apiClient.Post(errorListSubmitRequest);
-
-            Console.WriteLine("Status : {0}, Desc : {1}", response.SubmitionStatus, response.SubmitionStatusDescription);
+            apiClient.Post(errorListSubmitRequest);
         }
     }
 }
