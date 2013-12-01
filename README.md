@@ -6,14 +6,14 @@ Extended [**ElmahR**](https://bitbucket.org/wasp/elmahr/wiki/Home) dashboard usi
 **Install Steps**
 
 - Install Nuget package to web project
-`csharp
-Install-Package ElmahR.Api.Nancy
-`
+```powershell
+ Install-Package ElmahR.Api.Nancy
+```
 - Add following code to route registrations
-   `csharp
-   routes.IgnoreRoute("nancyapi/{*pathInfo}");
-   `
--  Delete nancy hadler declarations under both system.web <httpHandlers> and system.webserver <handlers> sections on** web.config** file.
-  ` xml
-  <add verb="*" type="Nancy.Hosting.Aspnet.NancyHttpRequestHandler" path="*" />
-`
+```csharp
+ routes.IgnoreRoute("nancyapi/{*pathInfo}");
+```
+-  Delete nancy hadler declarations under both system.web <httpHandlers> and system.webserver <handlers> sections on **web.config** file.
+```xml
+ <add verb="*" type="Nancy.Hosting.Aspnet.NancyHttpRequestHandler" path="*" />
+```
